@@ -31,7 +31,6 @@ export default function ContributeSection() {
     }
   ];
 
-  // Charger les contributions au démarrage
   useEffect(() => {
     loadSubmissions();
   }, []);
@@ -76,9 +75,9 @@ export default function ContributeSection() {
 
   if (loading) {
     return (
-      <div>
-        <div>
-          <Loader style={{ animation: 'spin 1s linear infinite', marginRight: '8px' }} />
+      <div className="contribute-container">
+        <div className="contribute-loading">
+          <Loader className="loader-spin" size={24} />
           Chargement des contributions...
         </div>
       </div>
@@ -86,34 +85,25 @@ export default function ContributeSection() {
   }
 
   return (
-    <div>
+    <div className="contribute-container">
       <h2>Comment contribuer ?</h2>
       
-      <div>
+      <div className="contribute-warning">
         ⚠️ Les contributions sont partagées avec tous les utilisateurs de cette page
       </div>
       
       {!selectedType && (
-        <div>
+        <div className="contribution-types-grid">
           {contributions.map((item) => {
             const Icon = item.icon;
             return (
               <div 
                 key={item.id}
+                className="contribution-card"
                 onClick={() => setSelectedType(item.id)}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.boxShadow = '0 10px 15px -3px rgba(0,0,0,0.1)';
-                  e.currentTarget.style.transform = 'translateY(-2px)';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.boxShadow = 'none';
-                  e.currentTarget.style.transform = 'translateY(0)';
-                }}
               >
-                <div >
-                  <div >
-                    <Icon style={{ width: '32px', height: '32px', color: '#2563eb' }} />
-                  </div>
+                <div className="contribution-icon-wrapper">
+                  <Icon size={32} />
                 </div>
                 <h3>{item.title}</h3>
                 <p>{item.description}</p>
@@ -124,7 +114,7 @@ export default function ContributeSection() {
       )}
 
       {selectedType && (
-        <form onSubmit={handleSubmit}>
+        <div className="contribution-form">
           <h3>
             {contributions.find(c => c.id === selectedType)?.title}
           </h3>
@@ -134,53 +124,50 @@ export default function ContributeSection() {
             placeholder="Titre"
             value={formData.title}
             onChange={(e) => setFormData({...formData, title: e.target.value})}
-            required
+            className="form-input"
           />
           
           <textarea
             placeholder="Description détaillée"
             value={formData.description}
             onChange={(e) => setFormData({...formData, description: e.target.value})}
-            required
+            className="form-textarea"
           />
           
-          <div>
+          <div className="form-buttons">
             <button 
-              type="submit"
-              onMouseEnter={(e) => e.currentTarget.style.background = '#1d4ed8'}
-              onMouseLeave={(e) => e.currentTarget.style.background = '#2563eb'}
+              className="btn-submit"
+              onClick={handleSubmit}
             >
               <Send size={18} />
               Soumettre
             </button>
             <button 
-              type="button"
+              className="btn-cancel"
               onClick={() => {
                 setSelectedType(null);
                 setFormData({ title: '', description: '' });
               }}
-              onMouseEnter={(e) => e.currentTarget.style.background = '#e5e7eb'}
-              onMouseLeave={(e) => e.currentTarget.style.background = '#f3f4f6'}
             >
               Annuler
             </button>
           </div>
-        </form>
+        </div>
       )}
 
       {submissions.length > 0 && (
-        <div>
-          <h3 style={{ fontSize: '24px', fontWeight: '600', marginBottom: '20px' }}>
+        <div className="submissions-section">
+          <h3 className="submissions-title">
             Contributions soumises ({submissions.length})
           </h3>
-          <div>
+          <div className="submissions-list">
             {submissions.map((sub) => (
-              <div key={sub.id}>
-                <div >
-                  <span>
+              <div key={sub.id} className="submission-item">
+                <div className="submission-header">
+                  <span className="submission-type-badge">
                     {contributions.find(c => c.id === sub.type)?.title}
                   </span>
-                  <span>{sub.date}</span>
+                  <span className="submission-date">{sub.date}</span>
                 </div>
                 <h4>{sub.title}</h4>
                 <p>{sub.description}</p>
@@ -188,7 +175,7 @@ export default function ContributeSection() {
             ))}
           </div>
         </div>
-      )}
+      )}        
     </div>
   );
 }
