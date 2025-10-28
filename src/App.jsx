@@ -3,6 +3,7 @@ import '../src/styles/styles.css';
 
 import ContributeSection from './components/ContributeSection.jsx';
 import MeditationFeatures from './components/FeatureSection.jsx';
+import Footer from './components/Footer.jsx'
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
     <div>
       <MeditationFeatures />
       <ContributeSection />
+      <Footer />
     </div>
   );
 }
