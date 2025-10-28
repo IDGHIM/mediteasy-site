@@ -1,34 +1,37 @@
+/* ==================== */
+/* VARIABLES CSS */
+/* ==================== */
 :root {
   /* Couleurs principales - palette zen & apaisante */
-  --color-primary-1: #5DE5DF; /* cyan légèrement plus clair pour le titre */
-  --color-primary-2: #6DD4A6; /* vert douceur légèrement plus clair */
-  --color-accent:     #0D4A62; /* bleu foncé principal - meilleur contraste */
-  --color-accent-2:   #0B5873; /* bleu accent (hover/bordures) */
-  --color-mindful:    #A8DFD8; /* teinte méditative douce */
+  --color-primary-1: #5DE5DF;
+  --color-primary-2: #6DD4A6;
+  --color-accent: #0D4A62;
+  --color-accent-2: #0B5873;
+  --color-mindful: #A8DFD8;
   
   /* Neutres */
-  --color-bg:         #EEF7F8; /* fond général en bleu-vert très pâle */
-  --color-surface:    #EEF7F8; /* carte principale en bleu-vert très pâle */
-  --color-bg-input:   #E3F0F2; /* fond des éléments interactifs - légèrement plus sombre */
-  --color-muted:      #5A7C88; /* textes secondaires - meilleur contraste */
-  --color-outline:    rgba(13,74,98,0.20); /* bordures plus visibles */
+  --color-bg: #EEF7F8;
+  --color-surface: #EEF7F8;
+  --color-bg-input: #E3F0F2;
+  --color-muted: #5A7C88;
+  --color-outline: rgba(13, 74, 98, 0.20);
   
-  /* Texte - contrastes améliorés */
-  --text-default:     #0A3845; /* couleur texte principale - contraste AA+ */
-  --text-secondary:   #1F5563; /* texte secondaire pour les sections */
-  --text-on-primary:  #FFFFFF; /* texte sur éléments colorés */
+  /* Texte */
+  --text-default: #0A3845;
+  --text-secondary: #1F5563;
+  --text-on-primary: #FFFFFF;
   
   /* Dégradés */
   --grad-primary: linear-gradient(135deg, var(--color-primary-1), var(--color-primary-2));
-  --grad-ambient: linear-gradient(180deg, rgba(93,229,223,0.08) 0%, rgba(109,212,166,0.03) 100%);
-  --grad-radial: radial-gradient(circle at 50% 0%, rgba(93,229,223,0.15) 0%, transparent 70%);
+  --grad-ambient: linear-gradient(180deg, rgba(93, 229, 223, 0.08) 0%, rgba(109, 212, 166, 0.03) 100%);
+  --grad-radial: radial-gradient(circle at 50% 0%, rgba(93, 229, 223, 0.15) 0%, transparent 70%);
   
-  /* Ombres / élévation - plus subtiles */
-  --shadow-soft: 0 2px 12px rgba(13,74,98,0.08);
-  --shadow-hover: 0 4px 20px rgba(13,74,98,0.12);
-  --shadow-float: 0 8px 32px rgba(13,74,98,0.1);
-  --shadow-inner: inset 0 1px 3px rgba(13,74,98,0.05);
-  --glow-soft: 0 0 20px rgba(93,229,223,0.25);
+  /* Ombres */
+  --shadow-soft: 0 2px 12px rgba(13, 74, 98, 0.08);
+  --shadow-hover: 0 4px 20px rgba(13, 74, 98, 0.12);
+  --shadow-float: 0 8px 32px rgba(13, 74, 98, 0.1);
+  --shadow-inner: inset 0 1px 3px rgba(13, 74, 98, 0.05);
+  --glow-soft: 0 0 20px rgba(93, 229, 223, 0.25);
   
   /* Typographie */
   --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui;
@@ -37,7 +40,9 @@
   --font-light: 300;
 }
 
-/* Reset & Base */
+/* ==================== */
+/* RESET & BASE */
+/* ==================== */
 * {
   margin: 0;
   padding: 0;
@@ -52,7 +57,9 @@ body {
   line-height: 1.6;
 }
 
-/* Typographie globale */
+/* ==================== */
+/* TYPOGRAPHIE */
+/* ==================== */
 h1 {
   font-size: 48px;
   font-weight: var(--font-heading-weight);
@@ -95,7 +102,9 @@ p {
   margin-bottom: 12px;
 }
 
-/* Boutons globaux */
+/* ==================== */
+/* BOUTONS */
+/* ==================== */
 button {
   font-family: var(--font-sans);
   font-weight: 500;
@@ -130,7 +139,9 @@ button[type="button"]:hover {
   background: var(--color-outline);
 }
 
-/* Inputs globaux */
+/* ==================== */
+/* INPUTS */
+/* ==================== */
 input[type="text"],
 textarea {
   width: 100%;
@@ -149,7 +160,7 @@ textarea {
 input[type="text"]:focus,
 textarea:focus {
   border-color: var(--color-accent);
-  box-shadow: 0 0 0 3px rgba(13,74,98,0.1);
+  box-shadow: 0 0 0 3px rgba(13, 74, 98, 0.1);
 }
 
 textarea {
@@ -159,7 +170,125 @@ textarea {
 }
 
 /* ==================== */
-/* MeditationFeatures Component */
+/* COMPONENT: PRESENTATION */
+/* ==================== */
+.mediteasy-container {
+  min-height: 100vh;
+  padding: 80px 24px;
+}
+
+.mediteasy-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.mediteasy-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.mediteasy-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  background: var(--grad-primary);
+  border-radius: 24px;
+  margin-bottom: 24px;
+  box-shadow: var(--glow-soft);
+  font-size: 40px;
+}
+
+.mediteasy-header h1 {
+  margin-bottom: 16px;
+}
+
+.mediteasy-header p {
+  font-size: 20px;
+  color: var(--text-secondary);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.mediteasy-card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: var(--shadow-soft);
+  padding: 40px;
+  margin-bottom: 40px;
+}
+
+.mediteasy-card h2 {
+  color: var(--color-accent);
+  margin-bottom: 20px;
+}
+
+.mediteasy-card p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.mediteasy-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px;
+}
+
+.mediteasy-link-card {
+  background: white;
+  border-radius: 20px;
+  padding: 32px;
+  text-decoration: none;
+  display: block;
+  box-shadow: var(--shadow-soft);
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.mediteasy-link-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+  border-color: var(--color-accent);
+}
+
+.mediteasy-link-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.mediteasy-link-icon {
+  font-size: 40px;
+}
+
+.mediteasy-link-badge {
+  background: var(--grad-primary);
+  color: var(--text-on-primary);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.mediteasy-link-card h3 {
+  color: var(--color-accent);
+  margin-bottom: 12px;
+  font-size: 22px;
+}
+
+.mediteasy-link-card p {
+  color: var(--text-secondary);
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+/* ==================== */
+/* COMPONENT: FEATURES */
 /* ==================== */
 .meditation-features-container {
   max-width: 1200px;
@@ -217,7 +346,7 @@ textarea {
 }
 
 /* ==================== */
-/* ContributeSection Component */
+/* COMPONENT: CONTRIBUTE */
 /* ==================== */
 .contribute-container {
   max-width: 900px;
@@ -235,7 +364,7 @@ textarea {
 }
 
 .contribute-warning {
-  background: linear-gradient(135deg, rgba(255,193,7,0.15), rgba(255,152,0,0.1));
+  background: linear-gradient(135deg, rgba(255, 193, 7, 0.15), rgba(255, 152, 0, 0.1));
   border-left: 4px solid #ff9800;
   padding: 16px 20px;
   border-radius: 12px;
@@ -288,7 +417,6 @@ textarea {
   margin-bottom: 0;
 }
 
-/* Formulaire de contribution */
 .contribution-form {
   background: white;
   padding: 32px;
@@ -316,7 +444,6 @@ textarea {
   justify-content: center;
 }
 
-/* Liste des contributions soumises */
 .submissions-section {
   margin-top: 60px;
 }
@@ -371,7 +498,7 @@ textarea {
 }
 
 /* ==================== */
-/* Footer Component */
+/* COMPONENT: FOOTER */
 /* ==================== */
 .footer {
   background: var(--color-accent);
@@ -449,8 +576,83 @@ textarea {
   margin-bottom: 0;
 }
 
-/* Responsive Footer */
+/* ==================== */
+/* ANIMATIONS */
+/* ==================== */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ==================== */
+/* RESPONSIVE */
+/* ==================== */
 @media (max-width: 768px) {
+  /* Typographie */
+  h1 {
+    font-size: 36px;
+  }
+  
+  h2 {
+    font-size: 28px;
+  }
+  
+  /* Presentation */
+  .mediteasy-container {
+    padding: 40px 16px;
+  }
+  
+  .mediteasy-header {
+    margin-bottom: 40px;
+  }
+  
+  .mediteasy-icon {
+    width: 64px;
+    height: 64px;
+    font-size: 32px;
+  }
+  
+  .mediteasy-header h1 {
+    font-size: 36px;
+  }
+  
+  .mediteasy-header p {
+    font-size: 18px;
+  }
+  
+  .mediteasy-card {
+    padding: 24px;
+  }
+  
+  .mediteasy-links {
+    grid-template-columns: 1fr;
+  }
+  
+  /* Grilles */
+  .features-grid,
+  .contribution-types-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  /* Formulaires */
+  .form-buttons {
+    flex-direction: column;
+  }
+  
+  .form-buttons button {
+    width: 100%;
+  }
+  
+  .submission-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  /* Footer */
   .footer {
     padding: 40px 0 0;
     margin-top: 60px;
@@ -474,44 +676,5 @@ textarea {
   
   .footer-bottom {
     padding: 20px 0;
-  }
-}
-
-/* Animation pour le loader */
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  h1 {
-    font-size: 36px;
-  }
-  
-  h2 {
-    font-size: 28px;
-  }
-  
-  .features-grid,
-  .contribution-types-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  .form-buttons {
-    flex-direction: column;
-  }
-  
-  .form-buttons button {
-    width: 100%;
-  }
-  
-  .submission-header {
-    flex-direction: column;
-    align-items: flex-start;
   }
 }
