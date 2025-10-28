@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png" />
-    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
-    <link rel="shortcut icon" href="/favicon/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
-    <link rel="manifest" href="/favicon/site.webmanifest" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon/" />
+    <link rel="icon" type="image/svg+xml" href="/favicon/" />
+    <link rel="shortcut icon" href="/favicon/" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/" />
+    <link rel="manifest" href="/favicon/" />
     
     <link rel="stylesheet" href="styles.css">
     <title>Mediteasy</title>
@@ -19,54 +19,49 @@
     <nav class="navbar">
         <div class="container">
             <ul class="nav-menu">
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
+                <li><a href="#presentation">Présentation</a></li>
+                <li><a href="#fonctionnalites">Fonctionnalités</a></li>
+                <li><a href="#contribuer">Contribuer</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Header -->
-    <header class="hero">
-        
-    </header>
-
     <!-- Présentation -->
-     <div className="mediteasy-container">
-      <div className="mediteasy-content">
-        <div className="mediteasy-header">
-          <div className="mediteasy-icon">
+    <section id="presentation" class="mediteasy-container">
+      <div class="mediteasy-content">
+        <div class="mediteasy-header">
+          <div class="mediteasy-icon">
             <span>🧘</span>
           </div>
-          <h1 className="mediteasy-title">Méditeasy</h1>
-          <p className="mediteasy-subtitle">
+          <h1 class="mediteasy-title">Méditeasy</h1>
+          <p class="mediteasy-subtitle">
             Une application mobile de méditation pour accompagner votre pratique quotidienne. Open source et gratuite !
           </p>
         </div>
 
-        <div className="mediteasy-card">
-          <h2 className="mediteasy-section-title">À propos du projet</h2>
-          <p className="mediteasy-description">
+        <div class="mediteasy-card">
+          <h2 class="mediteasy-section-title">À propos du projet</h2>
+          <p class="mediteasy-description">
             Méditeasy est une application mobile de méditation guidée construite avec Ionic. Elle offre des timers personnalisables, 
             des sons de fond apaisants et un suivi de progression pour vous aider à maintenir une routine de méditation régulière. 
             Compatible iOS et Android, l'application est actuellement en développement actif.
           </p>
         </div>
 
-        <div className="mediteasy-links">
+        <div class="mediteasy-links">
           <a 
             href="https://github.com/OlivierF47/mediteasy/releases" 
             target="_blank"
             rel="noopener noreferrer"
-            className="mediteasy-link-card mediteasy-link-download"
+            class="mediteasy-link-card mediteasy-link-download"
           >
-            <div className="mediteasy-link-header">
-              <span className="mediteasy-link-icon">📥</span>
-              <span className="mediteasy-link-badge">APK</span>
+            <div class="mediteasy-link-header">
+              <span class="mediteasy-link-icon">📥</span>
+              <span class="mediteasy-link-badge">APK</span>
             </div>
-            <h3 className="mediteasy-link-title">Télécharger l'APK</h3>
-            <p className="mediteasy-link-desc">
+            <h3 class="mediteasy-link-title">Télécharger l'APK</h3>
+            <p class="mediteasy-link-desc">
               Installez Méditeasy sur votre appareil Android
             </p>
           </a>
@@ -75,23 +70,23 @@
             href="https://github.com/OlivierF47/mediteasy" 
             target="_blank"
             rel="noopener noreferrer"
-            className="mediteasy-link-card mediteasy-link-github"
+            class="mediteasy-link-card mediteasy-link-github"
           >
-            <div className="mediteasy-link-header">
-              <span className="mediteasy-link-icon">💻</span>
-              <span className="mediteasy-link-badge">Open Source</span>
+            <div class="mediteasy-link-header">
+              <span class="mediteasy-link-icon">💻</span>
+              <span class="mediteasy-link-badge">Open Source</span>
             </div>
-            <h3 className="mediteasy-link-title">Voir sur GitHub</h3>
-            <p className="mediteasy-link-desc">
+            <h3 class="mediteasy-link-title">Voir sur GitHub</h3>
+            <p class="mediteasy-link-desc">
               Explorez le code source et contribuez au projet
             </p>
           </a>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- Fonctionnalités -->
-     <div class="meditation-features-container">
+    <section id="fonctionnalites" class="meditation-features-container">
         <h1>Fonctionnalités</h1>
         <p>Tout ce dont vous avez besoin pour une pratique de méditation sereine et personnalisée</p>
         
@@ -120,10 +115,10 @@
                 <p>Choisissez la durée de votre méditation de 5 à 180 minutes, avec des préréglages ou une durée sur mesure</p>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- Contribution -->
-    <div class="contribute-container" id="app">
+    <section id="contribuer" class="contribute-container">
         <div class="contribute-loading" id="loading">
             <svg class="loader-spin" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M21 12a9 9 0 1 1-6.219-8.56"></path>
@@ -209,31 +204,46 @@
                 <div class="submissions-list" id="submissionsList"></div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- Footer -->
-    <footer className="footer">
-      <div className="container">
-        <div className="footer-content">
-          <div className="footer-info">
+    <footer id="contact" class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-info">
             <h3>Mediteasy</h3>
             <p>Projet réalisé par Ichem DGHIM, Olivier FORABOSCO, Théo EVANNO</p>
           </div>
-          <div className="footer-links">
+          <div class="footer-links">
             <h4>Technologies utilisées</h4>
-            <div className="tech-badges">
-              <span className="tech-badge">Ionic</span>
-              <span className="tech-badge">TypeScript</span>
+            <div class="tech-badges">
+              <span class="tech-badge">Ionic</span>
+              <span class="tech-badge">TypeScript</span>
             </div>
           </div>
-          <div className="footer-contact">
+          <div class="footer-contact">
             <h4>Contact</h4>
-            <p>Développeur Web Junior</p>
-            <p>Basé à Agen, France</p>
-            <p>Formation AFEC</p>
+            <div class="social-links">
+              <h5>Réseaux sociaux Ichem</h5>
+              <a href="mailto:@ichemdghim@gmail.com" target="_blank">📧 Email</a>
+              <a href="https://github.com/IDGHIM" target="_blank">💻 GitHub</a>
+              <a href="https://idghim.github.io/fcc-Portofolio-Webpage/" target="_blank">💼 Portfolio</a>
+            </div>
+            <div class="social-links">
+              <h5>Réseaux sociaux Olivier</h5>
+              <a href="mailto:@gmail.com" target="_blank">📧 Email</a>
+              <a href="https://github.com/OlivierF47" target="_blank">💻 GitHub</a>
+              <a href="https://olivierf47.github.io/fCC-PortFolio/" target="_blank">💼 Portfolio</a>
+            </div>
+            <div class="social-links">
+              <h5>Réseaux sociaux Théo</h5>
+              <a href="mailto:@gmail.com" target="_blank">📧 Email</a>
+              <a href="https://github.com/Snoobydoo" target="_blank">💻 GitHub</a>
+              <a href="https://snoobydoo.github.io/fcc-Portfolio/" target="_blank">💼 Portfolio</a>
+            </div>
           </div>
         </div>
-        <div className="footer-bottom">
+        <div class="footer-bottom">
           <p>&copy; 2025 Mediteasy - Tous droits réservés</p>
         </div>
       </div>
