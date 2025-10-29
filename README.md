@@ -83,7 +83,7 @@ Ce projet est sous licence GPL V3. Voir le fichier `LICENSE` pour plus de détai
 
 ## 🌐 Liens utiles
 
-- [Site web du projet](https://idghim.github.io/mediteasy-site/))
+- [Site web du projet](https://idghim.github.io/mediteasy-site/)
 - [Documentation]()
 - [Issues](https://github.com/OlivierF47/mediteasy/issues)
 
