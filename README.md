@@ -83,8 +83,8 @@ Ce projet est sous licence GPL V3. Voir le fichier `LICENSE` pour plus de détai
 
 ## 🌐 Liens utiles
 
-- [Site web du projet](https://olivierf47.github.io/mediteasy/)
-- [Documentation](https://github.com/OlivierF47/mediteasy/wiki)
+- [Site web du projet](https://idghim.github.io/mediteasy-site/))
+- [Documentation]()
 - [Issues](https://github.com/OlivierF47/mediteasy/issues)
 
 ---
