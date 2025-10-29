@@ -1,70 +1,92 @@
-# Getting Started with Create React App
+# 🧘 Mediteasy
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Une application mobile de méditation pour accompagner votre pratique quotidienne. Open source et gratuite !
 
-## Available Scripts
+[![GitHub release](https://img.shields.io/github/v/release/OlivierF47/mediteasy)](https://github.com/OlivierF47/mediteasy/releases)
+[![License](https://img.shields.io/github/license/OlivierF47/mediteasy)](LICENSE)
 
-In the project directory, you can run:
+## 📱 À propos du projet
 
-### `npm start`
+Mediteasy est une application mobile de méditation guidée construite avec Ionic. Elle offre des timers personnalisables, des sons de fond apaisants et un suivi de progression pour vous aider à maintenir une routine de méditation régulière. Compatible iOS et Android, l'application est actuellement en développement actif.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## ✨ Fonctionnalités
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **⏱️ Compte à rebours** : Un compte à rebours de 3 secondes pour vous préparer avant le début de votre méditation
+- **🎵 Sons d'ambiance** : Choisissez parmi une sélection de sons apaisants (pluie, océan, oiseaux, flûte...) ou ajoutez vos propres sons personnalisés
+- **🔔 Gongs de méditation** : Sélectionnez votre gong préféré (japonais, zen, bol tibétain, cristal) et programmez des intervalles pour rythmer votre pratique
+- **⏳ Timer personnalisable** : Choisissez la durée de votre méditation de 5 à 180 minutes, avec des préréglages ou une durée sur mesure
 
-### `npm test`
+## 🚀 Technologies utilisées
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Ionic** - Framework pour applications mobiles hybrides
+- **TypeScript** - Langage de programmation typé
 
-### `npm run build`
+## 📥 Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Android
+Téléchargez la dernière version de l'APK depuis la [page des releases](https://github.com/OlivierF47/mediteasy/releases).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### iOS
+*En cours de développement*
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🛠️ Développement
 
-### `npm run eject`
+### Prérequis
+- Node.js
+- npm ou yarn
+- Ionic CLI
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Installation locale
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+# Cloner le dépôt
+git clone https://github.com/OlivierF47/mediteasy.git
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Accéder au répertoire
+cd mediteasy
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Installer les dépendances
+npm install
 
-## Learn More
+# Lancer l'application en mode développement
+ionic serve
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🤝 Comment contribuer
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Nous accueillons toutes les contributions ! Voici comment vous pouvez aider :
 
-### Code Splitting
+### Types de contributions
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **🐛 Reporter un bug** : Signalez les bugs que vous rencontrez
+- **📖 Documentation** : Améliorez la documentation
+- **✨ Nouvelle fonctionnalité** : Proposez de nouvelles fonctionnalités
 
-### Analyzing the Bundle Size
+### Process de contribution
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. Forkez le projet
+2. Créez votre branche de fonctionnalité (`git checkout -b feature/AmazingFeature`)
+3. Committez vos changements (`git commit -m 'Add some AmazingFeature'`)
+4. Poussez vers la branche (`git push origin feature/AmazingFeature`)
+5. Ouvrez une Pull Request
 
-### Making a Progressive Web App
+## 👥 Équipe
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Projet réalisé par :
+- **Ichem DGHIM** - [GitHub](https://github.com/IDGHIM) | [Portfolio](https://idghim.github.io/fcc-Portofolio-Webpage/)
+- **Olivier FORABOSCO** - [GitHub](https://github.com/OlivierF47) | [Portfolio](https://olivierf47.github.io/fCC-PortFolio/)
+- **Théo EVANNO** - [GitHub](https://github.com/Snoobydoo) | [Portfolio](https://snoobydoo.github.io/fcc-Portfolio/)
 
-### Advanced Configuration
+## 📄 Licence
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Ce projet est sous licence GPL V3. Voir le fichier `LICENSE` pour plus de détails.
 
-### Deployment
+## 🌐 Liens utiles
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- [Site web du projet](https://olivierf47.github.io/mediteasy/)
+- [Documentation](https://github.com/OlivierF47/mediteasy/wiki)
+- [Issues](https://github.com/OlivierF47/mediteasy/issues)
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Fait avec ❤️ et beaucoup de méditation
