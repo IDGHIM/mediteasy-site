@@ -1,92 +1,75 @@
 # 🧘 Mediteasy
-
-Une application mobile de méditation pour accompagner votre pratique quotidienne. Open source et gratuite !
+A mobile meditation application to support your daily practice. Open source and free!
 
 [![GitHub release](https://img.shields.io/github/v/release/OlivierF47/mediteasy)](https://github.com/OlivierF47/mediteasy/releases)
 [![License](https://img.shields.io/github/license/OlivierF47/mediteasy)](LICENSE)
 
-## 📱 À propos du projet
+## 📱 About the Project
+Mediteasy is a guided meditation mobile application built with Ionic. It offers customizable timers, soothing background sounds, and progress tracking to help you maintain a regular meditation routine. Compatible with iOS and Android, the application is currently under active development.
 
-Mediteasy est une application mobile de méditation guidée construite avec Ionic. Elle offre des timers personnalisables, des sons de fond apaisants et un suivi de progression pour vous aider à maintenir une routine de méditation régulière. Compatible iOS et Android, l'application est actuellement en développement actif.
+## ✨ Features
+- **⏱️ Countdown Timer**: A 3-second countdown to prepare you before your meditation begins
+- **🎵 Ambient Sounds**: Choose from a selection of soothing sounds (rain, ocean, birds, flute...) or add your own custom sounds
+- **🔔 Meditation Gongs**: Select your favorite gong (Japanese, Zen, Tibetan bowl, crystal) and schedule intervals to pace your practice
+- **⏳ Customizable Timer**: Choose your meditation duration from 5 to 180 minutes, with presets or custom duration
 
-## ✨ Fonctionnalités
-
-- **⏱️ Compte à rebours** : Un compte à rebours de 3 secondes pour vous préparer avant le début de votre méditation
-- **🎵 Sons d'ambiance** : Choisissez parmi une sélection de sons apaisants (pluie, océan, oiseaux, flûte...) ou ajoutez vos propres sons personnalisés
-- **🔔 Gongs de méditation** : Sélectionnez votre gong préféré (japonais, zen, bol tibétain, cristal) et programmez des intervalles pour rythmer votre pratique
-- **⏳ Timer personnalisable** : Choisissez la durée de votre méditation de 5 à 180 minutes, avec des préréglages ou une durée sur mesure
-
-## 🚀 Technologies utilisées
-
-- **Ionic** - Framework pour applications mobiles hybrides
-- **TypeScript** - Langage de programmation typé
+## 🚀 Technologies Used
+- **Ionic** - Framework for hybrid mobile applications
+- **TypeScript** - Typed programming language
 
 ## 📥 Installation
-
 ### Android
-Téléchargez la dernière version de l'APK depuis la [page des releases](https://github.com/OlivierF47/mediteasy/releases).
+Download the latest APK version from the [releases page](https://github.com/OlivierF47/mediteasy/releases).
 
 ### iOS
-*En cours de développement*
+*Under development*
 
-## 🛠️ Développement
-
-### Prérequis
+## 🛠️ Development
+### Prerequisites
 - Node.js
-- npm ou yarn
+- npm or yarn
 - Ionic CLI
 
-### Installation locale
-
+### Local Installation
 ```bash
-# Cloner le dépôt
+# Clone the repository
 git clone https://github.com/OlivierF47/mediteasy.git
-
-# Accéder au répertoire
+# Navigate to the directory
 cd mediteasy
-
-# Installer les dépendances
+# Install dependencies
 npm install
-
-# Lancer l'application en mode développement
+# Run the application in development mode
 ionic serve
 ```
 
-## 🤝 Comment contribuer
+## 🤝 How to Contribute
+We welcome all contributions! Here's how you can help:
 
-Nous accueillons toutes les contributions ! Voici comment vous pouvez aider :
+### Types of Contributions
+- **🐛 Report a Bug**: Report bugs you encounter
+- **📖 Documentation**: Improve the documentation
+- **✨ New Feature**: Propose new features
 
-### Types de contributions
+### Contribution Process
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-- **🐛 Reporter un bug** : Signalez les bugs que vous rencontrez
-- **📖 Documentation** : Améliorez la documentation
-- **✨ Nouvelle fonctionnalité** : Proposez de nouvelles fonctionnalités
-
-### Process de contribution
-
-1. Forkez le projet
-2. Créez votre branche de fonctionnalité (`git checkout -b feature/AmazingFeature`)
-3. Committez vos changements (`git commit -m 'Add some AmazingFeature'`)
-4. Poussez vers la branche (`git push origin feature/AmazingFeature`)
-5. Ouvrez une Pull Request
-
-## 👥 Équipe
-
-Projet réalisé par :
+## 👥 Team
+Project created by:
 - **Ichem DGHIM** - [GitHub](https://github.com/IDGHIM) | [Portfolio](https://idghim.github.io/fcc-Portofolio-Webpage/)
 - **Olivier FORABOSCO** - [GitHub](https://github.com/OlivierF47) | [Portfolio](https://olivierf47.github.io/fCC-PortFolio/)
 - **Théo EVANNO** - [GitHub](https://github.com/Snoobydoo) | [Portfolio](https://snoobydoo.github.io/fcc-Portfolio/)
 
-## 📄 Licence
+## 📄 License
+This project is licensed under GPL V3. See the `LICENSE` file for more details.
 
-Ce projet est sous licence GPL V3. Voir le fichier `LICENSE` pour plus de détails.
-
-## 🌐 Liens utiles
-
-- [Site web du projet](https://idghim.github.io/mediteasy-site/)
+## 🌐 Useful Links
+- [Project Website](https://idghim.github.io/mediteasy-site/)
 - [Documentation]()
 - [Issues](https://github.com/OlivierF47/mediteasy/issues)
 
 ---
-
-Fait avec ❤️ et beaucoup de méditation
+Made with ❤️ and lots of meditation
