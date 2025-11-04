@@ -1,3 +1,28 @@
+// Hide navbar on scroll down
+let lastScrollTop = 0;
+const navbar = document.querySelector('.navbar');
+const scrollThreshold = 5;
+
+window.addEventListener('scroll', () => {
+    const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (currentScroll <= 0) {
+        navbar.classList.remove('hidden');
+        return;
+    }
+
+    if (currentScroll > lastScrollTop && currentScroll > scrollThreshold) {
+        navbar.classList.add('hidden');
+    }
+
+    else if (currentScroll < lastScrollTop) {
+        navbar.classList.remove('hidden');
+    }
+
+    lastScrollTop = currentScroll;
+})
+
+
 const contributions = {
             bug: { title: "Report bug", description: "Signalez les bugs que vous rencontrez" },
             doc: { title: "Documentation", description: "Améliorez la documentation" },

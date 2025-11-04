@@ -46,6 +46,7 @@ body {
   background: var(--color-bg);
   line-height: 1.6;
   overflow-x: hidden;
+  padding-top: 80px; /* Compensation pour la navbar fixe */
 }
 
 /* ==================== */
@@ -129,12 +130,17 @@ p {
   top: 0;
   left: 0;
   right: 0;
+  width: 100%;
   background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(20px) saturate(180%);
   box-shadow: 0 2px 20px rgba(13, 74, 98, 0.08);
   z-index: 1000;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.4s ease;
   border-bottom: 1px solid rgba(13, 74, 98, 0.08);
+}
+
+.navbar.hidden {
+  transform: translateY(-100%);
 }
 
 .navbar::before {
@@ -147,10 +153,6 @@ p {
   background: var(--grad-primary);
   transform: scaleX(0);
   transition: transform 0.6s ease;
-}
-
-.navbar.scrolled::before {
-  transform: scaleX(1);
 }
 
 .navbar .container {
@@ -1184,6 +1186,10 @@ button:hover::before {
 }
 
 @media (max-width: 768px) {
+  body {
+    padding-top: 100px; /* Augmenté pour mobile car la navbar prend plus de hauteur */
+  }
+
   h1 {
     font-size: 42px;
   }
